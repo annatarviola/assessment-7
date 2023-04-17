@@ -67,7 +67,9 @@ console.log("append", resultsAppend.preciseWords);
 
 
 /* 
-The "push" method has a time complexity of O(1), while the "unshift" method has a time complexity of O(n). Even though the Insert function is initially faster for the smaller arrays, it scales more rapidly with its linear time and ends up being much slower than the Append function by the time we get to the XL array, which scales better running with constant time.
+The "push" method has a time complexity of O(1), while the "unshift" method has a time complexity of O(n). Even though the Insert function is initially faster for the smaller arrays, it scales more rapidly (linear) and ends up being much slower than the Append function by the time we get to the XL array, which scales better (constant).
 
 XC: The Insert function is so slow because unshift has to increment all the elements already present in the array, which takes longer than the Append function. All push is doing is adding onto the end of the array, and none of the index numbers have to change, making it faster.
 */
+
+
